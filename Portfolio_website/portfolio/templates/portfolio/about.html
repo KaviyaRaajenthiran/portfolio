@@ -1,0 +1,37 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+{% block title %} About {% endblock %}
+
+
+{% block content %}
+<div class="row my-5">
+  <div class="col-4 d-flex justify-content-center align-items-center">
+    <img src="{% static 'portfolio/images/girl.png' %}" alt="images" class='about_image'>
+  </div>
+
+  <div class="col-7 text-left text-light">
+    <h2>Hello!</h2>
+    <p class="fs-5">
+      Master’s in English Literature with a diverse background in editing, research, customer service, and tutoring—now transitioning into IT with hands-on experience in Python, Django, MySQL, HTML, CSS, and Bootstrap.
+    </p>
+
+    <p class="fs-5">
+        Skilled in content management, data analysis, and translating complex information for diverse users. My blend of analytical thinking, communication skills, and growing technical expertise positions me to bridge user experience and software development. Eager to contribute to innovative IT projects and continuously grow as a developer.  
+    </p>
+  </div>
+</div>
+<div class="row my-2">
+  
+    <h2 class="text-center" style="color:#4fffb0">My Tech Stack</h2>
+  <div class="col-12 d-flex justify-content-center align-items-center">
+    <img src="{% static 'portfolio/images/html.png' %}" alt="html" width="70px" height="70px" class="img-fluid ms-2 m-4">
+    <img src="{% static 'portfolio/images/css.png' %}" alt="css logo" width="70px" height="70px" class="img-fluid ms-2 m-4">
+    <img src="{% static 'portfolio/images/bootstrap.png' %}" alt="bootstrap logo" width="70px" height="70px" class="img-fluid ms-2 m-4">
+    <img src="{% static 'portfolio/images/mysql.png' %}" alt="mysql logo" width="70px" height="70px" class="img-fluid ms-2 m-4">
+    <img src="{% static 'portfolio/images/python.png' %}" alt="python logo" width="70px" height="70px" class="img-fluid bg-dark ms-2 m-4">
+    <img src="{% static 'portfolio/images/django.png' %}" alt="django logo" width="70px" height="70px" class="img-fluid bg-dark ms-2 m-4">
+  </div>
+</div>
+
+{% endblock %}

@@ -47,7 +47,16 @@ body{
     overflow: hidden;
     border-radius: 50%;
     margin: auto;
-    border: 5px solid #fff;
+    border: 2px solid #ccc;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.social_link:hover{
+  transition: 3px;
+}
+
+.about_image{
+  width: 200px;
+  height: auto;
+  display: block;
 }
