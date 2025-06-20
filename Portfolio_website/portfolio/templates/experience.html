@@ -1,0 +1,21 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+{% block title %} Experiences {% endblock %}
+
+
+{% block content %}
+  <div class="row my-2">
+    
+  {% for exp in experience %}
+      <div class="jumbtron jumbtron-fluid mt-2">
+        
+      <h4 class='dis text text-light text-center'>{{exp.company}}</h4>
+      <p class='pos text text-light text-center'>{{exp.position}}</p>
+      <p class='text text-light text-center'>{{exp.period}}</p>    
+    </div> 
+  {% endfor %} 
+  
+</div>
+
+{% endblock %}

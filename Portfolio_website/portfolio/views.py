@@ -17,3 +17,33 @@ def projects(request):
      }
   ] 
   return render(request,'portfolio/projects.html',{'projects_show':projects_show})
+
+
+def experience(request):
+  experience = [
+    
+      {
+      'company':'Smavy Private Limited',
+      'position':'Freelance English Tutor',
+      'period':'Present'
+    },
+    {
+      'company':'Draup',
+      'position':'Research Executive',
+      'period':'Mar 2022 - May 2024'
+    },
+    {
+      'company':'Amazon (contract)',
+      'position':'Customer Service Associate',
+      'period':'Aug 2021 - Nov 2021'
+    },
+      {'company':'TNQ Technologies',
+      'position':'Copy Editor',
+      'period':'Oct 2020 - Aug 2021'
+    },  
+  ]
+  return render(request,'experience.html',{'experience':experience})
+
+
+def certificate(request):
+  return render(request,'portfolio/certificate.html')
