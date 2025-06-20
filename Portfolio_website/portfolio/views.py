@@ -47,3 +47,6 @@ def experience(request):
 
 def certificate(request):
   return render(request,'portfolio/certificate.html')
+
+def contact(request):
+  return render(request,'portfolio/contact.html')
