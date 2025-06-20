@@ -76,3 +76,10 @@ body{
   font-style: 18px;
   color: #28a745;
 }
+
+.form-container{
+  border: 2px solid whitesmoke;
+  padding:20px;
+  border-radius: 10px;
+  background-color: #f0f0f0f0;
+}
